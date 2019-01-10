@@ -50,7 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  let updated = employees.slice()
+  for (let i = 0; i < updated.length ; i++) {
+    if (updated[i].firstName === "Theo"){
+        updated.splice(i,1)
+    } if (updated[i].department ==="Research and Development"){
+        updated[i].department ='HR'
+    }
+  } return updated
+}
 
 
 
@@ -68,8 +77,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
-
+function removeDuplicates(){
+  let noDupes = []
+  for(let i =0; i<workplaceAccidents.length; i++){
+    if (!noDupes.includes(workplaceAccidents[i])){
+      noDupes.push(workplaceAccidents[i])
+  }
+} return noDupes
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -138,7 +153,7 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+
 
 
 
